@@ -12,7 +12,7 @@ Hashtable::Hashtable(){
 int Hashtable::hash_function(string family){
 	int index = 0;
 	for(size_t i = 0; i <family.length();++i){
-		index +=family[i];
+		index +=(int)family[i];
 	}
 	return (index%table_size);
 }
